@@ -1,19 +1,17 @@
+ 
+import Exampl2 from "./components/ContextAPI/Exampl2";
+import { Example1 } from "./components/ContextAPI/Example1";
 
-import { useState,useEffect } from "react";
 const App = () => {
-  const [value,setValue]= useState(0);
+  
 
-// We can do anything here...
-  useEffect(()=>{
-    console.log("Hello Use Effect")
-    document.title= `Increment ${value}`
-  });
  return(
 <section>
   <h1>Hello</h1>
-  <h2>{value}</h2>
-
-  <button onClick={()=>setValue(value+1)}>Click Me</button>
+  {/* <FetchingData></FetchingData> */}
+  <Example1>
+    <Exampl2/>
+  </Example1>
 
 </section> 
 )
